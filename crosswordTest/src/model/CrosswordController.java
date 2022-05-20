@@ -116,7 +116,10 @@ public class CrosswordController {
 		}
 		return message;
 	}
-	
+	/**
+	 * Shows the game to with the closed spaces not shown
+	 * @return
+	 */
 	public String showCrossword2() {
 		int rows= crossword.length;
 		int columns= crossword[0].length;
@@ -180,6 +183,10 @@ public class CrosswordController {
 		out+= line + "\n";
 		return out;
 	}
+	/**
+	 * shows every space, meant for testing
+	 * @return
+	 */
 	public String showCrossword() {
 		int rows= crossword.length;
 		int columns= crossword[0].length;
